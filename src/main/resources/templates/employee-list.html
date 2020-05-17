@@ -21,6 +21,8 @@
 <div class="container">
     <h3>Employee Directory</h3>
 
+
+
     <table class=" table table-striped table-bordered">
         <thead class="thead-dark">
         <tr>
@@ -32,9 +34,9 @@
         </thead>
         <tbody>
         <tr th:each="employee : ${employees}">
-            <td th:text="${employee.firstName}"/>
-            <td th:text="${employee.lastName}"/>
-            <td th:text="${employee.email}"/>
+            <td th:text="${employee.firstName}"></td>
+            <td th:text="${employee.lastName}"></td>
+            <td th:text="${employee.email}"></td>
         </tr>
         </tbody>
     </table>
